@@ -1,0 +1,41 @@
+#mobileNavbar {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+
+  .mobileHamburger {
+    background: $primary;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobileNavLogo {
+    height: 50px;
+  }
+}
+
+.mobileNavRelative {
+  position: relative;
+
+  .mobileNavAbsolute {
+    z-index: 1000;
+    position: absolute;
+    background: white;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #mobileNavbar {
+    grid-template-columns: 1fr 5fr;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #mobileNavbar {
+    grid-template-columns: 1fr 4fr;
+  }
+}

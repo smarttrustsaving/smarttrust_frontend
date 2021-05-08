@@ -1,0 +1,80 @@
+.cardsGridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: minmax(1fr, 1fr);
+
+  padding-top: 50px;
+
+  .cardsGridComponent {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.cardComponentTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: $primary;
+  height: 120px;
+}
+
+// .cardComponentDescription {
+// padding: 20px;
+// text-align: center;
+// padding-bottom: 20px;
+// }
+
+.cardComponentRate {
+  width: 70%;
+  background: $primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+
+  .cardRateNumber {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .cardRatePercent {
+    font-size: 1.2rem;
+  }
+  .cardRatePA {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+}
+
+.cardComponentReadMore {
+  width: 70%;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1400px) {
+  .cardsGridContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardComponentRate {
+    width: 90%;
+  }
+
+  .cardComponentReadMore {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cardsGridContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,20 @@
+.mobileNavLink {
+  padding: 20px;
+  background: $primary;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid white;
+  }
+}
+
+.mobileNavSubLink {
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  z-index: 1001;
+}

@@ -1,0 +1,19 @@
+footer {
+  font-size: 0.9rem;
+}
+
+.footerLogo {
+  width: 120px;
+  height: auto;
+}
+
+#footerContactInfo,
+#footerOpeningHours {
+  div {
+    width: 250px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+}

@@ -1,0 +1,23 @@
+.basicContentContainer {
+  height: 100%;
+  width: 100%;
+  background: rgba(50, 50, 50, 0.4);
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 1024px) {
+  .basicContentContainer {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .basicContentContainer {
+    font-size: 2rem;
+  }
+}

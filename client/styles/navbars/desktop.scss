@@ -1,0 +1,77 @@
+#fakeNavbar {
+  height: 160px;
+}
+
+.desktopNavbar {
+  position: fixed;
+  background: white;
+  z-index: 1000;
+}
+
+.navbarLogo {
+  height: 70px;
+  cursor: pointer;
+}
+
+nav {
+  width: 100vw;
+}
+
+.navLinksContainer {
+  width: 100%;
+  background: $primary;
+  color: white;
+  overflow: auto;
+
+  .navLink {
+    float: left;
+    padding: 14px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+      background: $secondary;
+      transition: 0.5s;
+    }
+  }
+}
+
+.navbarRelative {
+  position: relative;
+
+  .navbarAbsolute {
+    background: white;
+    transition: 1s;
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0px 0px 10px gray;
+
+    .navSubLinks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px 0 50px 0;
+      cursor: pointer;
+
+      .navSubLinkIcon,
+      .navSubLinkTitle {
+        display: flex;
+        justify-content: center;
+      }
+
+      .navSubLinkIcon {
+        font-size: 2.5rem;
+        color: $primary;
+      }
+      .navSubLinkTitle {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}

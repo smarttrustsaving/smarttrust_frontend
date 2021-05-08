@@ -1,0 +1,27 @@
+{
+  "name": "smart_trust_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "leaflet": "^1.7.1",
+    "next": "^10.0.3",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-icons": "^3.11.0",
+    "react-leaflet": "^3.0.2",
+    "sass": "^1.29.0"
+  }
+}

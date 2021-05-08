@@ -1,0 +1,50 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1400px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px,
+);
+
+$navbar-light-color: black;
+
+// $primary: #00a88f;
+$primary: #3b8433;
+// $secondary: #faa842;
+// $secondary: black;
+$secondary: #ffe77aff;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+.body,
+body *,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+@import "./navbars/desktop.scss";
+@import "./navbars/mobile.scss";
+@import "./navbars/mobileNavElement.scss";
+@import "./layouts/section.scss";
+@import "./layouts/basic.scss";
+@import "./about.scss";
+@import "./cardsGrid.scss";
+@import "./cards.scss";
+@import "./footer.scss";
+@import "./icons.scss";
+@import "./landing.scss";
+
+.pointer {
+  cursor: pointer;
+}
