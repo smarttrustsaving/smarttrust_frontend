@@ -33,17 +33,18 @@ html {
   font-family: Inter;
 }
 
+@import "./layouts/basic.scss";
+@import "./layouts/section.scss";
 @import "./navbars/desktop.scss";
 @import "./navbars/mobile.scss";
 @import "./navbars/mobileNavElement.scss";
-@import "./layouts/section.scss";
-@import "./layouts/basic.scss";
 @import "./about.scss";
-@import "./cardsGrid.scss";
 @import "./cards.scss";
+@import "./cardsGrid.scss";
 @import "./footer.scss";
 @import "./icons.scss";
 @import "./landing.scss";
+@import "./notice.scss";
 
 .pointer {
   cursor: pointer;

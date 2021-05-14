@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Smart Trust - Work smart not hard</title>
       </Head>
+
       <AuthProvider>
         <Default>
           <Component {...pageProps} />
