@@ -3,7 +3,7 @@ import { FaTimesCircle } from "react-icons/fa";
 
 const Notice = () => {
   const [loading, setLoading] = useState(true);
-  const [viewed, setViewed] = useState(false);
+  const [viewed, setViewed] = useState(true);
 
   const imageRef = useRef();
   const crossRef = useRef();

@@ -8,7 +8,7 @@ const RateFees = () => {
   const [data, setData] = useState(undefined);
 
   useEffect(() => {
-    axios.get("all/all").then(({ data }) => {
+    axios.get("/all/all").then(({ data }) => {
       setData(data);
     });
   }, []);
